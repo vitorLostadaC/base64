@@ -66,14 +66,12 @@
     "run-applescript": "7.0.0"
   },
   "devDependencies": {
-    "@types/node": "22.0.0",
+    "@raycast/eslint-config": "^1.0.8",
+    "@types/node": "20.8.10",
     "@types/react": "18.3.3",
-    "@typescript-eslint/eslint-plugin": "7.17.0",
-    "@typescript-eslint/parser": "7.17.0",
-    "eslint": "9.8.0",
-    "eslint-config-prettier": "9.1.0",
-    "react-devtools": "5.3.1",
-    "typescript": "5.5.4"
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5",
+    "typescript": "^5.4.5"
   },
   "scripts": {
     "build": "ray build -e dist",

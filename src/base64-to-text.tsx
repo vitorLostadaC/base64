@@ -1,5 +1,4 @@
 import { Form, ActionPanel, Action, showToast, Toast } from "@raycast/api";
-import { useState } from "react";
 import { decode, isValid } from "js-base64";
 import { update } from "./util/clipboard";
 

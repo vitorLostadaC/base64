@@ -1,4 +1,4 @@
-import { Form, ActionPanel, Action, showToast, Detail, Toast, Icon, Clipboard } from "@raycast/api";
+import { Form, ActionPanel, Action, showToast, Detail, Toast, Icon } from "@raycast/api";
 import { useState } from "react";
 import fs from "fs";
 import path from "path";
