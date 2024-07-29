@@ -1,5 +1,5 @@
 import { runAppleScript } from "run-applescript";
-import { copyTextToClipboard, showHUD } from "@raycast/api";
+import { Clipboard, showHUD } from "@raycast/api";
 
 const isEmpty = (string: string) => {
   return string.length === 0;
@@ -12,6 +12,6 @@ export const contents = async () => {
 };
 
 export const update = async (contents: string) => {
-  await copyTextToClipboard(contents);
+  await Clipboard.copy(contents);
   showHUD("Copied to clipboard");
 };

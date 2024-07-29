@@ -6,27 +6,34 @@
   "icon": "command-icon.png",
   "author": "DanielSinclair",
   "contributors": [
-    "sammarks"
+    "sammarks",
+    "vitorlostada"
   ],
   "license": "MIT",
   "commands": [
     {
-      "name": "index",
-      "title": "Base64",
-      "description": "Encode / decode Base64",
+      "name": "text-to-base64",
+      "title": "Text to Base64",
+      "description": "Convert text to base64",
       "mode": "view"
     },
     {
-      "name": "encode",
-      "title": "Base64 Encode",
-      "description": "Overwrite the clipboard contents with an encoded string",
-      "mode": "no-view"
+      "name": "base64-to-text",
+      "title": "Base64 to Text",
+      "description": "Decode a base64 string",
+      "mode": "view"
     },
     {
-      "name": "decode",
-      "title": "Base64 Decode",
-      "description": "Overwrite the clipboard contents with a decoded string",
-      "mode": "no-view"
+      "name": "base64-to-image",
+      "title": "Base64 to Image",
+      "description": "Convert base64 to image",
+      "mode": "view"
+    },
+    {
+      "name": "image-to-base64",
+      "title": "Image to Base64",
+      "description": "Convert image to base64",
+      "mode": "view"
     }
   ],
   "preferences": [
@@ -38,26 +45,35 @@
       "title": "Default Action",
       "default": "copyToClipboard",
       "data": [
-        { "value": "copyToClipboard", "title": "Copy to Clipboard" },
-        { "value": "pasteInApp", "title": "Paste in App" },
-        { "value": "openInBrowser", "title": "Open in Browser" }
+        {
+          "value": "copyToClipboard",
+          "title": "Copy to Clipboard"
+        },
+        {
+          "value": "pasteInApp",
+          "title": "Paste in App"
+        },
+        {
+          "value": "openInBrowser",
+          "title": "Open in Browser"
+        }
       ]
     }
   ],
   "dependencies": {
-    "@raycast/api": "1.44.0",
-    "js-base64": "3.7.2",
-    "run-applescript": "6.0.0"
+    "@raycast/api": "1.79.1",
+    "js-base64": "3.7.7",
+    "run-applescript": "7.0.0"
   },
   "devDependencies": {
-    "@types/node": "16.11.7",
-    "@types/react": "17.0.34",
-    "@typescript-eslint/eslint-plugin": "5.3.1",
-    "@typescript-eslint/parser": "5.3.1",
-    "eslint": "8.2.0",
-    "eslint-config-prettier": "8.3.0",
-    "react-devtools": "4.21.0",
-    "typescript": "4.4.4"
+    "@types/node": "22.0.0",
+    "@types/react": "18.3.3",
+    "@typescript-eslint/eslint-plugin": "7.17.0",
+    "@typescript-eslint/parser": "7.17.0",
+    "eslint": "9.8.0",
+    "eslint-config-prettier": "9.1.0",
+    "react-devtools": "5.3.1",
+    "typescript": "5.5.4"
   },
   "scripts": {
     "build": "ray build -e dist",
